@@ -21,6 +21,7 @@ bool Window::Create(int _width, int _height, const char* _title)
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 	glfwWindowHint(GLFW_SAMPLES, 8);
 
 	m_glfw_window = glfwCreateWindow(_width, _height, _title, nullptr, nullptr);
